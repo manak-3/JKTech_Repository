@@ -31,7 +31,7 @@ jobs:
         run: dotnet build DocumentManagementSystem.API/DocumentManagementSystem.API.csproj --no-restore --configuration Release
 
       - name: Run unit tests
-        run: dotnet test DocumentManagementSystem.Tests/DocumentManagementSystem.Tests.csproj --no-build --configuration Release --verbosity normal
+        run: dotnet test DocumentManagementSystem.Tests/DocumentManagementSystem.Tests.csproj --configuration Release --verbosity normal
 
   docker-build-push:
     name: Docker Build & Push
