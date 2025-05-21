@@ -25,4 +25,4 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 EXPOSE 8085
-ENTRYPOINT ["dotnet", "documentmanagementsystem.api.dll"]
+ENTRYPOINT ["dotnet", "DocumentManagementSystem.API.dll"]
